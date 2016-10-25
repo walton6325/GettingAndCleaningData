@@ -7,17 +7,17 @@
    dataset will be written to called tidyset.txt, which can also be found in this repository.
 
 ## Processing steps
-   1.	Create Path to data file
-   2.	Create directory, down zip files and unzip files
-   3.	Load files into a .txt file
-      i.	X Train
-      ii.	Y Train
-      iii.	Subject Train
-      iv.	X Test
-      v.	Y Test
-      vi.	Subject Test
-      vii.	Features
-      viii.	Activity Labels
+    1.	Create Path to data file
+    2.	Create directory, down zip files and unzip files
+    3.	Load files into a .txt file
+         i.	  ==> X Train
+         ii.  ==> Y Train
+         iii. ==> Subject Train
+         iv.  ==> X Test
+         v.	  ==> Y Test
+         vi.  ==>	Subject Test
+         vii. ==>	Features
+         viii.==>	Activity Labels
    4.	Merge X, Y and Subject files
    5.	Extract the measurement for mean and standard deviation
    6.	Add descriptive names for activities
@@ -27,10 +27,8 @@
 
 ## *********   Helpful Information *********
 ## Identifiers
-•	subject     The ID of the test subject
-
-•	activity     The type of activity performed when the corresponding measurements were taken
-
+-	Subject ==> The ID of the test subject-
+-	Activity==> The type of activity performed when the corresponding measurements were taken
 
 
 ## Tidy data set
@@ -41,172 +39,230 @@
 
 ## Activity Labels
    •	WALKING 
+   
    •	WALKING_UPSTAIRS 
+   
    •	WALKING_DOWNSTAIRS
+   
    •	SITTING 
+   
    •	STANDING
+   
    •	LAYING 
+   
 
 ## Raw Measurements
 •	tBodyAccMeanX
 •	tBodyAccMeanY
-•	tBodyAccMeanZ
+•	tBodyAccMeanZ 
+
 •	tBodyAccStdX
 •	tBodyAccStdY
 •	tBodyAccStdZ
+
 •	tGravityAccMeanX
 •	tGravityAccMeanY
 •	tGravityAccMeanZ
+
 •	tGravityAccStdX
 •	tGravityAccStdY
 •	tGravityAccStdZ
+
 •	tBodyAccJerkMeanX
 •	tBodyAccJerkMeanY
 •	tBodyAccJerkMeanZ
+
 •	tBodyAccJerkStdX
 •	tBodyAccJerkStdY
 •	tBodyAccJerkStdZ
+
 •	tBodyGyroMeanX
 •	tBodyGyroMeanY
 •	tBodyGyroMeanZ
+
 •	tBodyGyroStdX
 •	tBodyGyroStdY
 •	tBodyGyroStdZ
+
 •	tBodyGyroJerkMeanX
 •	tBodyGyroJerkMeanY
 •	tBodyGyroJerkMeanZ
+
 •	tBodyGyroJerkStdX
 •	tBodyGyroJerkStdY
 •	tBodyGyroJerkStdZ
+
 •	tBodyAccMagMean
 •	tBodyAccMagStd
 •	tGravityAccMagMean
+
 •	tGravityAccMagStd
 •	tBodyAccJerkMagMean
 •	tBodyAccJerkMagStd
+
 •	tBodyGyroMagMean
 •	tBodyGyroMagStd
 •	tBodyGyroJerkMagMean
+
 •	tBodyGyroJerkMagStd
 •	fBodyAccMeanX
 •	fBodyAccMeanY
+
 •	fBodyAccMeanZ
 •	fBodyAccStdX
 •	fBodyAccStdY
+
 •	fBodyAccStdZ
 •	fBodyAccMeanFreqX
 •	fBodyAccMeanFreqY
+
 •	fBodyAccMeanFreqZ
 •	fBodyAccJerkMeanX
 •	fBodyAccJerkMeanY
+
 •	fBodyAccJerkMeanZ
 •	fBodyAccJerkStdX
 •	fBodyAccJerkStdY
+
 •	fBodyAccJerkStdZ
 •	fBodyAccJerkMeanFreqX
 •	fBodyAccJerkMeanFreqY
+
 •	fBodyAccJerkMeanFreqZ
 •	fBodyGyroMeanX
 •	fBodyGyroMeanY
+
 •	fBodyGyroMeanZ
 •	fBodyGyroStdX
 •	fBodyGyroStdY
+
 •	fBodyGyroStdZ
 •	fBodyGyroMeanFreqX
 •	fBodyGyroMeanFreqY
+
 •	fBodyGyroMeanFreqZ
 •	fBodyAccMagMean
 •	fBodyAccMagStd
+
 •	fBodyAccMagMeanFreq
 •	fBodyBodyAccJerkMagMean
 •	fBodyBodyAccJerkMagStd
+
 •	fBodyBodyAccJerkMagMeanFreq
 •	fBodyBodyGyroMagMean
 •	fBodyBodyGyroMagStd
+
 •	fBodyBodyGyroMagMeanFreq
 •	fBodyBodyGyroJerkMagMean
 •	fBodyBodyGyroJerkMagStd
+
 •	fBodyBodyGyroJerkMagMeanFreq
 
 ## •	Processed Measurements
 •	timeBodyAccMeanX
 •	timeBodyAccMeanY
 •	timeBodyAccMeanZ
+
 •	timeBodyAccStdX
 •	timeBodyAccStdY
 •	timeBodyAccStdZ
+
 •	timeGravityAccMeanX
 •	timeGravityAccMeanY
 •	timeGravityAccMeanZ
+
 •	timeGravityAccStdX
 •	timeGravityAccStdY
 •	timeGravityAccStdZ
+
 •	timeBodyAccJerkMeanX
 •	timeBodyAccJerkMeanY
 •	timeBodyAccJerkMeanZ
+
 •	timeBodyAccJerkStdX
 •	timeBodyAccJerkStdY
 •	timeBodyAccJerkStdZ
+
 •	timeBodyGyroMeanX
 •	timeBodyGyroMeanY
 •	timeBodyGyroMeanZ
+
 •	timeBodyGyroStdX
 •	timeBodyGyroStdY
 •	timeBodyGyroStdZ
+
 •	timeBodyGyroJerkMeanX
 •	timeBodyGyroJerkMeanY
 •	timeBodyGyroJerkMeanZ
+
 •	timeBodyGyroJerkStdX
 •	timeBodyGyroJerkStdY
 •	timeBodyGyroJerkStdZ
+
 •	timeBodyAccMagMean
 •	timeBodyAccMagStd
 •	timeGravityAccMagMean
+
 •	timeGravityAccMagStd
 •	timeBodyAccJerkMagMean
 •	timeBodyAccJerkMagStd
+
 •	timeBodyGyroMagMean
 •	timeBodyGyroMagStd
 •	timeBodyGyroJerkMagMean
+
 •	timeBodyGyroJerkMagStd
 •	frequenceBodyAccMeanX
 •	frequenceBodyAccMeanY
+
 •	frequenceBodyAccMeanZ
 •	frequenceBodyAccStdX
 •	frequenceBodyAccStdY
+
 •	frequenceBodyAccStdZ
 •	frequenceBodyAccMeanFreqX
 •	frequenceBodyAccMeanFreqY
+
 •	frequenceBodyAccMeanFreqZ
 •	frequenceBodyAccJerkMeanX
 •	frequenceBodyAccJerkMeanY
+
 •	frequenceBodyAccJerkMeanZ
 •	frequenceBodyAccJerkStdX
 •	frequenceBodyAccJerkStdY
+
 •	frequenceBodyAccJerkStdZ
 •	frequenceBodyAccJerkMeanFreqX
 •	frequenceBodyAccJerkMeanFreqY
+
 •	frequenceBodyAccJerkMeanFreqZ
 •	frequenceBodyGyroMeanX
 •	frequenceBodyGyroMeanY
+
 •	frequenceBodyGyroMeanZ
 •	frequenceBodyGyroStdX
 •	frequenceBodyGyroStdY
+
 •	frequenceBodyGyroStdZ
 •	frequenceBodyGyroMeanFreqX
 •	frequenceBodyGyroMeanFreqY
+
 •	frequenceBodyGyroMeanFreqZ
 •	frequenceBodyAccMagMean
 •	frequenceBodyAccMagStd
+
 •	frequenceBodyAccMagMeanFreq
 •	frequenceBodyBodyAccJerkMagMean
 •	frequenceBodyBodyAccJerkMagStd
+
 •	frequenceBodyBodyAccJerkMagMeanFreq
 •	frequenceBodyBodyGyroMagMean
 •	frequenceBodyBodyGyroMagStd
+
 •	frequenceBodyBodyGyroMagMeanFreq
 •	frequenceBodyBodyGyroJerkMagMean
 •	frequenceBodyBodyGyroJerkMagStd
+
 •	frequenceBodyBodyGyroJerkMagMeanFreq
   
 
