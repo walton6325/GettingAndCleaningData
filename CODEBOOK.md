@@ -25,8 +25,8 @@
    8.	Create dataset with average for each variable
    9.	Write the tidyset to disc
 
-##  *********   Helpful Information *********
-##  Identifiers
+## *********   Helpful Information *********
+## Identifiers
 •	subject     The ID of the test subject
 •	activity     The type of activity performed when the corresponding measurements were taken
 
