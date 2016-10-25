@@ -27,8 +27,8 @@
 
 ## *********   Helpful Information *********
 ## Identifiers
-   '•	subject     The ID of the test subject
-   '•	activity    The type of activity performed when the corresponding measurements were taken
+   *'•	subject     The ID of the test subject
+   *'•	activity    The type of activity performed when the corresponding measurements were taken
 
 ## Tidy data set
    Tidy data set contains the average of all feature standard deviation and mean values of the raw dataset. Original variable names
