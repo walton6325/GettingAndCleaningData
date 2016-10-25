@@ -1,10 +1,10 @@
 #  Code Book - Getting and Cleaning Data
-   A script called run_analysis.R which will merge the test and training sets together. This script will ## used that that reside in 
+   A script called run_analysis.R which will merge the test and training sets together. This script will used that that reside in 
    UCI  HAR Dataset which must be extracted. 
    
-   After merging testing and training, labels are added and only columns that have to do with mean ##and standard deviation are kept.
-   The script will create a tidy data set containing the means of all the columns per test subject and ##per activity. This tidy 
-   dataset will be written to called tidyset.txt, which can also be found in this ##repository.
+   After merging testing and training, labels are added and only columns that have to do with mean and standard deviation are kept.
+   The script will create a tidy data set containing the means of all the columns per test subject and per activity. This tidy 
+   dataset will be written to called tidyset.txt, which can also be found in this repository.
 
 ## Processing steps
    1.	Create Path to data file
@@ -27,8 +27,9 @@
 
 ## *********   Helpful Information *********
 ## Identifiers
-   *'•	subject     The ID of the test subject
-   *'•	activity    The type of activity performed when the corresponding measurements were taken
+•	subject     The ID of the test subject
+•	activity     The type of activity performed when the corresponding measurements were taken
+
 
 ## Tidy data set
    Tidy data set contains the average of all feature standard deviation and mean values of the raw dataset. Original variable names
