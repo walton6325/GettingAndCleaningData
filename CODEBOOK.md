@@ -1,19 +1,20 @@
-## Code Book - Getting and Cleaning Data
-## A script called run_analysis.R which will merge the test and training sets together. This script will ## used that that reside in UCI ## HAR Dataset which must be extracted. 
-## After merging testing and training, labels are added and only columns that have to do with mean ##and standard deviation are kept.
+#  Code Book - Getting and Cleaning Data
+* `A script called run_analysis.R which will merge the test and training sets together. This script will used that that reside in UCI 
+* `HAR Dataset which must be extracted. 
+## After merging testing and training, labels are added and only columns that have to do with mean and standard deviation are kept.
 ## The script will create a tidy data set containing the means of all the columns per test subject and ##per activity. This tidy dataset ## will be written to called tidyset.txt, which can also be found in this ##repository.
 ## Processing steps
 ## 1.	Create Path to data file
 ## 2.	Create directory, down zip files and unzip files
 ## 3.	Load files into a .txt file
-## i.	X Train
-## ii.	Y Train
-## iii.	Subject Train
-## iv.	X Test
-## v.	Y Test
-## vi.	Subject Test
-## vii.	Features
-## viii.	Activity Labels
+##    i.	  X Train
+##    ii.  	Y Train
+##    iii.	Subject Train
+##    iv.	  X Test
+##    v.	  Y Test
+##    vi.	  Subject Test
+##    vii.	Features
+##    viii.	Activity Labels
 ## 4.	Merge X, Y and Subject files
 ## 5.	Extract the measurement for mean and standard deviation
 ## 6.	Add descriptive names for activities
@@ -37,10 +38,10 @@
 ## •	LAYING 
 
 ## Raw Measurements
-## •	tBodyAccMeanX
-## •	tBodyAccMeanY
-## •	tBodyAccMeanZ
-## •	tBodyAccStdX
+* `•	tBodyAccMeanX
+* `•	tBodyAccMeanY
+* `•	tBodyAccMeanZ
+* `•	tBodyAccStdX
 ## •	tBodyAccStdY
 ## •	tBodyAccStdZ
 ## •	tGravityAccMeanX
