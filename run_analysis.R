@@ -1,6 +1,7 @@
 ## Combine the training and the test sets to create one data set.
 ##-------------------------------------------------------------------------------
-## step 1: Create path, create direcotry, download zip file from website and unzip
+## step 1: Create path, create direcotry, download zip file from website and unzip, load dplyr
+library(dplyr)
 path_rf <- file.path("C:/Users/zina6/OneDrive/Documents/myzipfile" , "UCI HAR Dataset")
 files<-list.files(path_rf, recursive=TRUE)
 ##-------------------------------------------------------------------------------
@@ -17,16 +18,16 @@ unzip ("C:/Users/zina6/OneDrive/Documents/myzipfile/mydata.zip",
 ## Y Activity Data 
 ## Subject data
 ##-------------------------------------------------------------------------------
-train.x       <- read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/train/x_train.txt")
-train.y       <- read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/train/y_train.txt")
+trainX        <- read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/train/x_train.txt")
+trainY       <- read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/train/y_train.txt")
 train.subject <- read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/train/subject_train.txt")
-test.x        <- read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/test/x_test.txt")
-test.y        <-read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/test/y_test.txt")
+testX        <- read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/test/x_test.txt")
+testY        <-read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/test/y_test.txt")
 test.subject  <- read.table("C:/Users/zina6/OneDrive/Documents/myzipfile/UCI HAR Dataset/test/subject_test.txt")
 #-------------------------------------------------------------------------------
 ## step 4: merge train and test data
-trainData <- cbind(train.subject, train.y, train.x)
-testData <- cbind(test.subject, test.y, test.x)
+trainData <- cbind(train.subject, trainY, trainX)
+testData <- cbind(test.subject, testY, testX)
 AllData <- rbind(trainData, testData)
 ##-------------------------------------------------------------------------------
 ## 5. Extract only the measurements on the mean and standard deviation for each measurement. 
@@ -58,7 +59,7 @@ names(finalData) <- gsub("-std", "Std", names(finalData))
 
 ##-------------------------------------------------------------------------------
 ## 8. creates a second, tidy data set with the average of each variable for each activity and each subject.
-
+#
 groupData <- finalData %>%
   group_by(subject, activity) %>%
   summarise_each(funs(mean))
@@ -66,3 +67,4 @@ groupData <- finalData %>%
 ## 9. Write text file
 write.table(groupData, "TidySet.txt", row.names = FALSE)
 ## 10. End of Project - Getting and Cleaning Data
+
